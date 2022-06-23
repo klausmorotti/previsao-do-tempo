@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Previsão do Tempo</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="deviceInfo">
+            <div class="screenDevice">
+                <div class="infoMain">
+                    <form action="">
+                        <input type="text" placeholder="Buscar localização..">
+                        <img src="assets/images/search.png" alt="Imagem Lupa">
+                    </form>
+
+                    <div class="info">
+                        <div class="error"></div>
+
+                        <div class="local">
+                            <h1></h1>
+                            <h4></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="infoAdditional">
+
+                    <div class="minionError">
+                        <img src="assets/images/minions.png" alt="Imagem Minions">
+                    </div>
+
+                    <div class="info">
+                        <div class="infoTemperature">
+                            <div class="statusWeather">
+                                <img src="assets/images/sun.png" alt="Imagem situação da temperatura">
+                                <p class="descriptionImage"></p>
+                            </div>
+
+                            <div class="temperatures">
+                                <div class="temp tempMin">
+                                    <h1></h1>
+                                    <div class="bar"></div>
+                                    <p>Mínima</p>
+                                </div>
+                                <div class="temp tempMax">
+                                    <h1></h1>
+                                    <div class="bar"></div>
+                                    <p>Máxima</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="moreInfo">
+                            <div class="humidity">
+                                <img src="assets/images/humidity.png" alt="">
+                                <div class="titleInfo">Umidade (%)</div>
+                                <div class="bar"></div>
+                                <div class="valueInfo"></div>
+                            </div>
+                            <div class="visibility">
+                                <img src="assets/images/clouds.png" alt="">
+                                <div class="titleInfo">Visibilidade (m)</div>
+                                <div class="bar"></div>
+                                <div class="valueInfo"></div>
+                            </div>
+                            <div class="windSpeed">
+                                <img src="assets/images/air.png" alt="">
+                                <div class="titleInfo">Vento (Km/h)</div>
+                                <div class="bar"></div>
+                                <div class="valueInfo"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/weather.js"></script>
+</body>
+
+</html>

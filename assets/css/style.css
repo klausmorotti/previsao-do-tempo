@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+main {
+    height: 100vh;
+    padding: 0 20px;
+    background-image: url('../images/image-desert.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Área principal */
+main .deviceInfo {
+    max-width: 1000px;
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+    background-color: transparent;
+    border: 15px solid #4F4F4F;
+    border-radius: 20px;
+    box-shadow:0 0 1em black;
+}
+
+main .deviceInfo .screenDevice {
+    width: 100%;
+    min-height: inherit;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #1E1E1E;
+    border-radius: 5px;
+}
+
+/* Área topo do dispositivo ( Campo de busca ) */
+main .deviceInfo .screenDevice .infoMain {
+    color:#FFF;
+    padding: 30px 50px 10px 50px;
+    min-height: calc(500px - 180px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main .deviceInfo .screenDevice .infoMain form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.screenDevice .infoMain form input[type=text] {
+    padding: 7px 15px;
+    width: 250px;
+    border-radius: 20px;
+    outline: 0;
+    letter-spacing: 1px;
+}
+
+.screenDevice .infoMain form img {
+    width: 15px;
+    height: 15px;
+    margin-left: -25px;
+    cursor: pointer;
+}
+
+/* Área topo do dispositivo ( Hora e Local ) */
+main .deviceInfo .screenDevice .infoMain .info {
+    width: 100%;
+    height: auto;
+}
+.infoMain .info .error {
+    display:none;
+    font-size:30px;
+    max-width:500px;
+}
+
+.infoMain .info .local {
+    display: flex;
+    flex-direction: column;
+}
+
+.infoMain .info .local h1 {
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.infoMain .info .local h4 {
+    font-size:20px;
+    font-weight: 500;
+}
+
+/* Área inferior do dispositivo */
+main .deviceInfo .screenDevice .infoAdditional {
+    padding: 30px 40px;
+    min-height: 180px;
+    height: auto;
+    background-color: #ADD8E6;
+}
+.infoAdditional .minionError {
+    width:100%;
+    height:100%;
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+.infoAdditional .minionError img {
+    max-width:150px;
+}
+
+.infoAdditional .info {
+    min-height: 180px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Área inferior do dispositivo ( Lado esquerdo ) */
+.infoAdditional .info .infoTemperature {
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+}
+
+.infoAdditional .info .infoTemperature .statusWeather {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoAdditional .info .infoTemperature .statusWeather img {
+    max-width: 80px;
+}
+
+.infoAdditional .info .infoTemperature .statusWeather .descriptionImage {
+    text-transform:capitalize;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.infoAdditional .info .infoTemperature .temperatures {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.infoAdditional .info .infoTemperature .temperatures .temp {
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.infoTemperature .temperatures .temp h1 {
+    font-weight: 400;
+}
+
+.bar {
+    width: 20px;
+    height: 2px;
+    background-color: #EA4C89;
+    margin: 0px 15px;
+}
+
+/* Área inferior do dispositivo ( Lado direito ) */
+.infoAdditional .info .moreInfo {
+    width: 100%;
+    display: flex;
+}
+
+.infoAdditional .info .moreInfo>div {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.infoAdditional .info .moreInfo>div img {
+    max-width: 40px;
+    margin-bottom: 20px;
+}
+
+.infoAdditional .info .moreInfo>div .titleInfo {
+    font-size: 15px;
+}
+
+.infoAdditional .info .moreInfo>div .bar {
+    margin: 15px 0;
+}
+
+.infoAdditional .info .moreInfo>div .valueInfo {
+    font-size: 25px;
+}
+
+/* Responsivity */
+/* (960px) */
+@media only screen and (max-width:950px) {
+    .infoAdditional .info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .infoAdditional .info .infoTemperature {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .infoAdditional .info .infoTemperature .temperatures {
+        margin-top: 30px;
+    }
+
+    .infoAdditional .info .moreInfo {
+        max-width: 100%;
+        margin-top: 30px;
+    }
+}
+
+/* (600px) */
+@media only screen and (max-width:600px) {
+    main {
+        padding: 20px;
+        min-height:100vh;
+        height: auto;
+    }
+
+    main .deviceInfo .screenDevice .infoMain {
+        padding: 25px;
+    }
+
+    .infoMain .info .error {
+        font-size:20px;
+        max-width:300px;
+    }
+
+    .infoMain .info .dateAndHour h1 {
+        font-size: 30px;
+    }
+
+    .infoMain .info .dateAndHour h4 {
+        font-size: 13px;
+    }
+
+    .infoMain .info .local h1 {
+        font-size: 25px;
+    }
+
+    .infoAdditional .info .infoTemperature .temperatures {
+        margin-top: 50px;
+    }
+
+    .infoAdditional .info .moreInfo {
+        margin-top: 50px;
+        flex-direction: column;
+    }
+
+    .infoAdditional .info .moreInfo>div {
+        margin-bottom: 30px;
+    }
+
+    .infoAdditional .info .moreInfo>div:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+/* (450px) */
+@media only screen and (max-width:450px) {
+    main .deviceInfo .screenDevice .infoMain .info {
+        flex-direction: column;
+    }
+
+    .infoMain .info .local {
+        margin-top: 30px;
+    }
+
+    .infoMain .info .local h4 {
+        text-align: left;
+    }
+}
+
+/* Animação Shake */
+.animation {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
