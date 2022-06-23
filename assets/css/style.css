@@ -207,6 +207,11 @@ main .deviceInfo .screenDevice .infoAdditional {
 /* Responsivity */
 /* (960px) */
 @media only screen and (max-width:950px) {
+    main {
+        padding: 20px;
+        min-height:100vh;
+        height: auto;
+    }
     .infoAdditional .info {
         flex-direction: column;
         align-items: center;
@@ -229,12 +234,6 @@ main .deviceInfo .screenDevice .infoAdditional {
 
 /* (600px) */
 @media only screen and (max-width:600px) {
-    main {
-        padding: 20px;
-        min-height:100vh;
-        height: auto;
-    }
-
     main .deviceInfo .screenDevice .infoMain {
         padding: 25px;
     }
