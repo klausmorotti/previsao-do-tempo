@@ -48,3 +48,4 @@ O projeto de previsão do tempo conta com as seguintes funcionalides:
 ## 📝 Licença
 
 Este projeto está sob licença. Consulte o arquivo <a href="https://github.com/klausmorotti/previsao-do-tempo/blob/master/LICENSE">LICENSE</a> para obter mais detalhes.
+
