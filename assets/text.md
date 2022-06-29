@@ -1,42 +1,59 @@
-# PREVISÃO DO TEMPO
+<h1 align="center">PREVISÃO DO TEMPO</h1>
 
-## 📄 Explicação
+<img src="assets/images/previsao-do-tempo-gif.gif" alt="Descrição da imagem">
 
-Projeto para consulta de previsão do tempo em todo o mundo, meu primeiro projeto criado utlizando uma API.
-O projeto de previsão do tempo conta com as seguintes funcionalides:
+> 🔎 Projeto de consulta de previsão do tempo em tempo real de qualquer lugar do mundo.
+🗔 Confira a aplicação: https://klausmorotti.github.io/previsao-do-tempo/ <br>
 
-* Campo de busca para solicitar informações do lugar que quiser
-* Requisição de informações por meio de API
-* utilização de promises que trazem respostas
-* Caso seja encontrada a busca com sucesso, é retornada as informações solicitadas
-* Caso não seja encontrada a busca, retorna uma mensagem de localização não encontrada
+## :page_facing_up: Explicação
 
-## 🎯 Etapas do projeto
+O projeto de previsão do tempo foi criado com objetivo de colocar em prática meus conhecimentos com requisições JavaScript e poder colaborar com qualquer pessoa que queira consultar previsões do tempo de qualquer lugar do mundo.
 
-✔️ Criando a interface do projeto </br>
-✔️ Criando a validação do campo de busca </br>
-✔️ Pegando o valor digitado no campo de busca e fazendo a requisição por meio de uma URL </br>
-✔️ Lidando com os resultados da requisição </br>
-✔️ Mostrando os resultados retornados na tela </br> 
-✔️ Criando condições diversas situações: sucess, pending, failed </br>
-✔️ Responsivizando a página
+O projeto consiste e uma interface simples e intuitiva na qual basta apenas o usuário digitar o lugar na qual deseja consultar a previsão que em poucos milisegundos ja será retornado os dados meteorológicos do lugar especificado.
+
+Caso o usuário digite um lugar existente, será retornado os dados meteorológicos do local.
+Caso o usuário digite um lugar inexistente, será retornado um aviso de "Localização não encontrada".
+
+O projeto é 100% responsivo para dispositivos como desktops, tablets e celulares, levando em consideração a praticidade para poder consultar os dados de qualquer lugar e dispositivo.
 
 
-## 🚀 Tecnologias
-* <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">HTML</a>
-* <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">CSS</a>
-* <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">JavaScript</a>
+## 📁 Páginas
 
-## 📡 API'𝘀 usadas na aplicação
-<a href="https://openweathermap.org/" target="_blank">Current Weather and Forecast</a>
+O site tem no total 1 página, sendo ela
+
+- **Página principal** A página principal consiste em uma interface que simula um aparelho mobile onde ao buscar pelo local desejado na lupa de pesquisa será retornado os dados do local se existente e se não existente um aviso de "localização não encontrada".
+
+
+## 🎯 Etapas ##
+
+:heavy_check_mark: Desenvolver a interaface pura com as tecnologias HTML e CSS.
+:heavy_check_mark: Adicionar o evento de clique ao teclar enter ou clicar na lupa de pesquisa para que seja pego o valor do input e feita a requisição.
+:heavy_check_mark: Fazer a requisição para o valor contido no input (Local) buscado pelo usuário.
+:heavy_check_mark: Organizar as informações retornadas pela requisição em objetos para poder manipular facilmente os dados.
+:heavy_check_mark: Fazendo a verificação se o local informado existe ou não para exibir os dados ou o erro.
+:heavy_check_mark: Pegando as informações do objeto da etapa anterior e jogando na tela de forma visível ao usuário.
+:heavy_check_mark: Tornando o projeto responsivo para diversos dispositivos.
+:heavy_check_mark: Projeto Finalizado.
+
+## 🚀 Tecnologias ##
+
+- [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+
+## 📡 API'𝘀 usadas na aplicação ##
+
+- ☀️ [OpenWeatherMap](https://openweathermap.org/)
 
 ## 🤝 Colaboradores
+
+Agradecemos às seguintes pessoas que contribuíram para este projeto:
 
 <table>
   <tr>
     <td align="center">
       <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/84789400?v=4" width="160px;" height="160px" style="border-radius:50%" alt="Foto de Klaus Morotti"/><br>
+        <img src="https://avatars.githubusercontent.com/u/84789400?v=4" width="160px;" alt="Foto do Klaus Morotti no GitHub"/><br>
         <sub>
           <b>Klaus Morotti</b>
         </sub>
@@ -47,4 +64,8 @@ O projeto de previsão do tempo conta com as seguintes funcionalides:
 
 ## 📝 Licença
 
-Este projeto está sob licença. Consulte o arquivo <a href="https://github.com/klausmorotti/previsao-do-tempo/blob/master/LICENSE">LICENSE</a> para obter mais detalhes.
+Este projeto está sob licença. Consulte o arquivo [LICENSE](https://github.com/klausmorotti/previsao-do-tempo/blob/master/LICENSE) para obter mais detalhes.
+
+&#xa0;
+
+<a href="#top">Volte para o topo</a>
